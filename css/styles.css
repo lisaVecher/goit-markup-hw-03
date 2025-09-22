@@ -261,7 +261,7 @@ img {
 .container {
   max-width: 1158px;
   padding-left: 15px;
-  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -270,7 +270,6 @@ img {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-
 /*Header*/
 
 .header-topline {
@@ -319,6 +318,10 @@ img {
 
 /*Section 1 Heading*/
 
+.section-one {
+  padding: 188px 0;
+}
+
 .section-one-container {
   display: flex;
   align-items: center;
@@ -330,10 +333,14 @@ img {
   padding-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 496px;
 }
 
 .section-one-button {
-  display: flex;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
   border-radius: 4px;
   margin-left: auto;
   margin-right: auto;
@@ -352,6 +359,10 @@ img {
   margin: auto;
 }
 
+.advantages-list-item {
+  width: calc((100% - 72px) / 4);
+}
+
 .advantages-heading {
   margin-bottom: 8px;
 }
@@ -359,7 +370,7 @@ img {
 /*Section 3 Our Team*/
 
 .our-team-heading {
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .our-team-list {
@@ -367,25 +378,35 @@ img {
   align-items: center;
   justify-content: center;
   gap: 24px;
-  text-align: center;
 }
 
 .our-team-list-item {
-  border-radius: 4px;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
+
+.our-team-list-info-container {
+  padding: 32px 0;
+}
+
 .our-team-employee-name {
-  padding: 32px 0px 8px 0px;
+  text-align: center;
+  margin-bottom: 8px;
 }
 .our-team-employee-job-title {
-  padding: 0px 0px 32px 0px;
+  text-align: center;
 }
 
 /*Section 4 Our Portfolio*/
 
+.container-our-portfolio {
+  padding: 32px 16px;
+}
+
 .our-portfolio-heading {
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .our-portfolio-list {
@@ -401,6 +422,7 @@ img {
 
 .our-portfolio-item {
   padding: 32px 0px 8px 16px;
+  margin-bottom: 8px;
 }
 
 .our-portfolio-item-form {
@@ -414,16 +436,19 @@ img {
 }
 /*Footer*/
 
+.footer {
+  padding: 100px 0;
+}
 .container-footer {
   display: flex;
   flex-direction: column;
 }
 
 .logo-title-footer {
-  padding: 100px 0px 16px 0px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-text {
-  padding: 0px 0px 100px 0px;
   max-width: 264px;
 }
