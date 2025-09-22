@@ -421,15 +421,11 @@ img {
 }
 
 .our-portfolio-item {
-  padding: 32px 0px 8px 16px;
   margin-bottom: 8px;
 }
 
-.our-portfolio-item-form {
-  padding: 0px 314px 32px 16px;
-}
-
 .item-container {
+  padding: 32px 16px;
   border-right: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
