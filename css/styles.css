@@ -38,12 +38,10 @@ body {
 
 .navigation-link-go:focus {
   color: #404bbf;
-  text-decoration: underline;
 }
 
 .navigation-link-go:hover {
   color: #404bbf;
-  text-decoration: underline;
 }
 
 .navigation-link-go {
@@ -58,6 +56,8 @@ body {
 
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .address-list {
@@ -75,7 +75,6 @@ ul {
 
 .address-contact:hover {
   color: #404bbf;
-  text-decoration: underline;
 }
 
 .address-contact:focus {
@@ -206,6 +205,16 @@ footer {
   color: #f4f4fd;
 }
 
+.logo-title-footer {
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  line-height: 1.17;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  color: #4d5ae5;
+}
 .logo-title-studio-footer {
   line-height: 1.1;
   letter-spacing: 0.03em;
@@ -215,4 +224,206 @@ footer {
   color: #f4f4fd;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*Робота з розміщенням елементів*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/*Header*/
+
+.header-topline {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-list {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navigation-link-go {
+  padding: 24px 0;
+}
+
+.logo-title {
+  padding: 24px 0;
+  margin-right: 76px;
+}
+
+.address-ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.address-list {
+  margin-left: auto;
+}
+
+.address-contact {
+  display: block;
+  padding: 24px 0;
+}
+
+/*Section 1 Heading*/
+
+.section-one-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.section-one-heading {
+  display: flex;
+  align-items: center;
+  padding-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-one-button {
+  display: flex;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-text {
+  padding: 16px 32px;
+}
+
+/*Section 2 Our Advantages*/
+
+.advantages-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: auto;
+}
+
+.advantages-heading {
+  margin-bottom: 8px;
+}
+
+/*Section 3 Our Team*/
+
+.our-team-heading {
+  padding-bottom: 72px;
+}
+
+.our-team-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  text-align: center;
+}
+
+.our-team-list-item {
+  border-radius: 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.our-team-employee-name {
+  padding: 32px 0px 8px 0px;
+}
+.our-team-employee-job-title {
+  padding: 0px 0px 32px 0px;
+}
+
+/*Section 4 Our Portfolio*/
+
+.our-portfolio-heading {
+  padding-bottom: 72px;
+}
+
+.our-portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.our-portfolio-list-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.our-portfolio-item {
+  padding: 32px 0px 8px 16px;
+}
+
+.our-portfolio-item-form {
+  padding: 0px 314px 32px 16px;
+}
+
+.item-container {
+  border-right: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+}
+/*Footer*/
+
+.container-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-title-footer {
+  padding: 100px 0px 16px 0px;
+}
+
+.footer-text {
+  padding: 0px 0px 100px 0px;
+  max-width: 264px;
 }
